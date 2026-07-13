@@ -239,9 +239,6 @@ The AARC Blueprint Architecture {cite}`AARC_BPA` establishes a comprehensive ref
 
 The AARC Blueprint Architecture also serves as a rich source of Information, Guidelines and Best Practices on all levels of technical, organisational, legal (as far as possible) and security matters around identity federation topics {cite}`AARC_Guidelines`.
 
-### References
-<mark>Note</mark> _[UR]: references are now converted to bibtex entries. If citing works this section will be removed_
-
 
 ## EOEPCA+ - Earth Observation Exploitation Common Architecture
 
@@ -446,15 +443,15 @@ Other Self-Sovereign Identity (SSI) aspects with W3C compliant VC/VP were identi
 
 ## Use Case Summary Table
 
-| Use Case Example    | Key Technologies Applied | AuthN |AuthZ | Objectives |PoC|
-| -------- | ------- | ------- |------- |------- |------- |
-|    ESA/NASA MAAP     |     |  |    |   Cross-platform data retrieval, analysis, processor deployment and execution. Federated IdPs.  |   |
-|    JAXA/ESA MAAP  |      |     |     |     |   |
-|    NASA Use CASE (WGISS-59)  |      |     |     |     |   |
-|    DestinE  |   |    |    |  Federated IdP, Federated services.  |   |
-|    Bilateral ESA-DLR  |  identity federation | yes | yes |    | Demonstrator for federated discovery / federated access use cases |
-|    eduGAIN  | applied AARC Blueprint Architecture | yes | yes | International Meta-Federation of national Identity Federations |   |
-|    EOEPCA+  |  |  |  |   |   |
-|    Japan SSI Decentralised  |   |    |    |    |   |
-|    Integrity Provenance and Trust  |   |    |    |    |   |
+| Use Case Example    | Key Technologies Applied | AuthN |AuthZ | Objectives | PoC | Federation Type |
+| -------- | ------- | ------- | ------- | ------- | ------- | ------- |
+|    ESA/NASA MAAP     |     |  |    |   Cross-platform data retrieval, analysis, processor deployment and execution. Federated IdPs.  |   |   |
+|    JAXA/ESA MAAP  |      |     |     |     |   |   |
+|    NASA Use CASE (WGISS-59)  |      |     |     |     |   |   |
+|    DestinE  |   |    |    |  Federated IdP, Federated services.  |   |   |
+|    Bilateral ESA-DLR  |  identity federation | yes | yes |    | Demonstrator for federated discovery / federated access use cases | Identity F., Catalogue F., cross-jurisdictional, bilateral (1:1), closed F. |
+|    eduGAIN  | applied AARC Blueprint Architecture | yes | yes | International Meta-Federation of national Identity Federations |  | Identity F., Service F., cross-jurisdictional, n:m, open F. |
+|    EOEPCA+  |  |  |  |   |   |   |
+|    Japan SSI Decentralised  |   |    |    |    |   |   |
+|    Integrity Provenance and Trust  |   |    |    |    |   |   |
 
