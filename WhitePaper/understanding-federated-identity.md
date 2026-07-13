@@ -160,8 +160,7 @@ sequenceDiagram
 
   - **SAML**: Security Assertion Markup Language (SAML) is an open-standard XML-based data format that allows secure sharing of authentication and authorization data between different organizations or systems. It allows a user to log in once (via their organization's identity provider) and then access various partner applications or enterprise services without needing to re-enter credentials. SAML is used by both the IdPs and SPs within federated identity management setups.
 
-## Types of Federation (or: Federation Taxonomy?)
-<mark>Note</mark> _[UR]_ initial content/structure for this new section. Just a proposal, please add/update/comment.
+## Federation Taxonomy
 
 ### Overview
 _Federating something_ means making a resource or asset inside an organization accessible to one or more other organizations.
@@ -171,21 +170,31 @@ Federations vary extremely in size: from 1:1 bilateral federations with two part
 
 The type of information exchanged between participants in a federation also has legal and compliance implications. If personal data of users is transferred between participants of a federation data protection requirements must be met. Depending on the type of data exchanged, additional legal requirements may apply, too (e.g. export control law).
 
+In the following text the term _Federation_ is used for cross-organizational federations, which is the most common use case by far.
+However, the same concepts apply for (large / international) organizations that form internal identity / service federations, mostly subsumed under the term single-sign-on (SSO).
 
 
 ### Federation Types: Type of federated Ressources
+
+An Identity Federation consists of more than one Identity Provider co-operativly providing authentication and authorization services for a protected resource.
+In its smallest form, an organization hosting an IdP and SP connects to an external IdP (of another organization) in order to allow access to the SP via the local and the external IdP.
+
 
 Identities, Data, Catalogues, ...
 
 ### Federation Types: Federation Size / Number and organizational structure of Participants
 
-Identity Federation = cross-organizational version of SSO
+Starting with at least 2 organizations (bilateral federation), the size of federations is practically unlimited.
+Counting the IdPs and SPs in a federation with access to protected ressources, the minimum size is 1 IdP and 1 SP (1:1 for short), ranging up to n:m (example: eduGAIN).
 
-from 1:1 to n:m 
 
 ### Federation Types: Geolocation of Participants, national / international Federations
 
-inside a single jurisdiction vs. cross-jurisdictional
+The geolocation of federation participants together with their legal character has to be considered when designing a federation.
+If all federation participants are geolocated in the same Country and no other legal specifics apply -> single jurisdiction.
+Some countries share common legal frameworks relevant for federations, e.g. the European Union the General Data Protection Regulation (GDPR). If all federation participants reside inside the territorial scope of the GDPR, then they can be considered single-jurisdictional related to data protection.
+
+cross-jurisdictional ...
 
 ### Federation Types: closed versus open Federations
 
@@ -195,13 +204,12 @@ open Federations: e.g. national research Identity Federations, eduGAIN: particip
 contract between all participants is not feasible
 -> Solution: 
 
+### Federation Types: Hierarchy
 
+Flat federations: no hierarchy.
+Staged federations: members of federations can (or must) be federations themself.
 
-
-
-
-
-
+### Federation Types: Symmetry
 
 
 
