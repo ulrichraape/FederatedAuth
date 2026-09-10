@@ -237,8 +237,29 @@ The AARC Blueprint Architecture {cite}`AARC_BPA` establishes a comprehensive ref
 
 The AARC Blueprint Architecture also serves as a rich source of Information, Guidelines and Best Practices on all levels of technical, organisational, legal (as far as possible) and security matters around identity federation topics {cite}`AARC_Guidelines`.
 
-### References
-<mark>Note</mark> _[UR]: references are now converted to bibtex entries. If citing works this section will be removed_
+### 3.4.4 Example: Bringing a Service into eduGAIN (UR)
+
+Description on how to bring a service (SP) into eduGAIN, stepwise:
+1. clarify requirements regarding SP participation in the target national identity federation
+2. prepare necessary steps
+3. register the service in a national identity federation
+4. describe technical requirements on how to do this
+5. choose technology: classic SAML-based style or OIDC (newer, not yet implemented eduGAIN-wide)
+6. operate a SP-IdP-Proxy
+7. next step: clarify requirements to bring the SP also in eduGAIN
+8. prepare necessary steps, check REFEDS and SIRTFI requirements
+9. have the SP also registered for eduGAIN
+
+Example Services (SPs): EOC Geoservice (DLR), EOEPCA+ Reference Environment
+
+Example for SAML-based participation: EOEPCA+ Reference Environment
+Need to operate an SP-IdP-Proxy (e.g. Shibboleth (https://www.shibboleth.net/), SATOSA (https://daasi.de/en/satosa-a-modular-proxy/), SimpleSAMLPHP (https://simplesamlphp.org/)
+
+Example for OIDC-based participation: EOC Geoservice
+OIDC Proxy is operated by national federation, e.g. the DFN-AAI OIDC Proxy of the German DFN-AAI
+SP can talk "OIDC" with the Proxy, while the Proxy talks SAML with the rest of the federation.
+
+Screenshots available
 
 
 ## 3.5 EOEPCA+ - Earth Observation Exploitation Common Architecture
@@ -451,11 +472,11 @@ Other Self-Sovereign Identity (SSI) aspects with W3C compliant VC/VP were identi
 
 ## 3.8 Use Case Summary Table
 
-| Use Case Example    | Key Technologies Applied | AuthN |AuthZ | Objectives |PoC|
+| Use Case Example    | Key Technologies Applied | AuthN |AuthZ | Objectives | PoC |
 | -------- | ------- | ------- |------- |------- |------- |
 |    ESA/NASA MAAP     |     |  |    |   Cross-platform data retrieval, analysis, processor deployment and execution. Federated IdPs.  |   |
 |    DestinE  |   |    |    |  Federated IdP, Federated services.  |   |
-|    Bilateral ESA-DLR  |  identity federation | yes | yes |    | Demonstrator for federated discovery / federated access use cases |
+|    Bilateral ESA-DLR  |  identity federation, service federation | yes | yes |    | Demonstrator for federated discovery / federated access use cases |
 |    eduGAIN  | applied AARC Blueprint Architecture | yes | yes | International Meta-Federation of national Identity Federations |   |
 |    EOEPCA+  |  |  |  |   |   |
 |    Japan SSI Decentralised  |   |    |    |    |   |
