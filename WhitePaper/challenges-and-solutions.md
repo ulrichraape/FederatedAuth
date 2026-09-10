@@ -39,6 +39,9 @@ This applies to "third countries" as well as International Organisations such as
 
 <mark>Note</mark> _[UR]_ this section would benefit from input from authors from other data protection jurisdictions / frameworks outside of GDPR
 
+### Organisational Requirements, Security Implications
+
+to be filled by UR
 
 ## Transformative Benefits for CEOS/EO Ecosystem
 - **CEOS possible implementation**
